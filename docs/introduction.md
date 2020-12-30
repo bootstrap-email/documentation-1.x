@@ -21,10 +21,10 @@ Bootstrap Email uses an approach to email that feels like writing normal HTML. S
 #### Contributing
 Contributions are not only welcome, they are encouraged. This project is big and exciting and I need your help to continue to grow and build this.
 
-Have an issue to report?! Awesome report it [here](https://github.com/stuyam/bootstrap-email/issues)!
+Have an issue to report?! Awesome report it [here](https://github.com/bootstrap-email/bootstrap-email/issues)!
 
-Another way you can help and show your support is giving this project a star on the [GitHub Page](https://github.com/stuyam/bootstrap-email). This is me giving it it's first star, look how cute that little guy is! (hopefully, we will get more than just the one...)
+Another way you can help and show your support is giving this project a star on the [GitHub Page](https://github.com/bootstrap-email/bootstrap-email). This is me giving it it's first star, look how cute that little guy is! (hopefully, we will get more than just the one...)
 
-<a href="https://github.com/stuyam/bootstrap-email" class="w-25 mx-auto d-block">
+<a href="https://github.com/bootstrap-email/bootstrap-email" class="w-25 mx-auto d-block">
   <img src="/img/gifs/star.gif" class="w-100" />
 </a>
