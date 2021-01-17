@@ -79,7 +79,7 @@ $(function(){
         var fontPercentage = ($(this).parent().width() - 40)/parseInt($(this).data('initial-width')) * 100;
       }
       else{
-        var fontPercentage = $(this).parent().width()/parseInt($(this).data('initial-width')) * 100;
+        var fontPercentage = $(this).parent().width()/parseInt($(this).data('initial-width')) * 100 - 10;
       }
       $(this).css('font-size', fontPercentage + '%');
       if( firstGo ){
