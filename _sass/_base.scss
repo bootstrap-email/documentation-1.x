@@ -172,11 +172,15 @@ footer {
 .email-click-preview,
 .mobile-email-click-preview {
   span {
-    opacity: .5;
+    opacity: .75;
     &[data-show]:hover,
-    &.active{
+    &.active {
       opacity: 1;
       cursor: pointer;
+      color: #6f4da2;
+    }
+    &.active {
+      font-weight: 600;
     }
   }
 }
