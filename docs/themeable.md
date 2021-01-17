@@ -1,10 +1,8 @@
 ---
 layout: docs
 title:  "Themeable"
+badges: false
 ---
-<h1 class="mt-0 h2 mb-2">{{ page.title }}</h1>
-<hr>
-
 When you see the
 <span class="d-inline-block">
   <a href="/docs/themeable" class="badge m-0 d-flex align-items-center compatibility-badge">

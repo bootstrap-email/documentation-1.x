@@ -1,6 +1,5 @@
 html, body {
-  font-family: 'Open Sans', sans-serif;
-  font-family: aktiv-grotesk, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
 }
 
@@ -44,7 +43,6 @@ aside {
         border-radius: 4px;
         a {
           color: #6f4da2 !important;
-          text-decoration: none;
         }
       }
 
@@ -52,6 +50,7 @@ aside {
         color: #616161;
         padding: 0.15rem 0.5rem;
         display: block;
+        text-decoration: none;
       }
     }
   }
@@ -131,6 +130,7 @@ footer {
   font-weight: 500;
   margin: 0.4rem 0 0 1rem;
   display: block;
+  text-decoration: none;
   .badge-check {
     background-color: #51d88a;
     border-radius: 9999px;
@@ -199,6 +199,6 @@ footer {
   }
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-weight: 400 !important;
-}
+// .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+//   font-weight: 400 !important;
+// }

@@ -1,11 +1,10 @@
 ---
 layout: docs
 title:  "Images"
+badges: true
 themeable: false
 responsive: true
 ---
-{% include doc-header.html %}
-
 Images can be very complicated in emails. Luckily Bootstrap email makes it easy.
 
 <strong>Note: All images must have a `height` and `width` property on the image to size it correctly in Outlook.</strong>

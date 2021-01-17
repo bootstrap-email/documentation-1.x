@@ -1,11 +1,10 @@
 ---
 layout: docs
 title:  "Table"
+badges: true
 themeable: false
 responsive: false
 ---
-{% include doc-header.html %}
-
 The table component has all the following classes. Even `.table-striped`!
 
  `.table`, `.table-striped`,`.table-bordered`, `.thead-light`, `.thead-dark`, `.table-{theme-color}`, `.table-dark`

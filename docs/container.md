@@ -1,11 +1,10 @@
 ---
 layout: docs
 title:  "Container"
+badges: true
 themeable: false
 responsive: true
 ---
-{% include doc-header.html %}
-
 Wrap you page content in a container to bring the content in tighter and center align in the page. The max-width on the container is 600px which is the standard width for emails. It will be responsive on mobile devices.
 
 #### Container

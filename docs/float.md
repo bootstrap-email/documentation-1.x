@@ -1,11 +1,10 @@
 ---
 layout: docs
 title:  "Float"
+badges: true
 themeable: false
 responsive: false
 ---
-{% include doc-header.html %}
-
 Floating left or right wraps the content in a table that left or right aligns it.
 
 ```html

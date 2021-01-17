@@ -1,11 +1,10 @@
 ---
 layout: docs
 title:  "Badge"
+badges: true
 themeable: true
 responsive: false
 ---
-{% include doc-header.html %}
-
 Use a badge inline to show a count or give a status on something.
 
 ```html

@@ -1,11 +1,10 @@
 ---
 layout: docs
 title:  "Alert"
+badges: true
 themeable: true
 responsive: false
 ---
-{% include doc-header.html %}
-
 Alerts are good for bringing attention to something like an notice or some sort of warning.
 
 ```html

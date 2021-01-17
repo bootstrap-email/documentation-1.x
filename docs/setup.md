@@ -1,21 +1,13 @@
 ---
 layout: docs
 title:  "Setup"
+badges: false
 ---
-<h1 class="mt-0 h2 mb-2">{{ page.title }}</h1>
-<hr>
-
-#### Current Environment Support
+#### Environment Support
+- Command Line
+- Ruby
 - Ruby on Rails
-- [Online editor](https://bootstrapemail.com/editor)
-
-#### Future Support (Help Wanted <3)
-- Node/JS Support
-- General Ruby Support
-- General PHP Support
-- Laravel Support
-
-I am thinking of building the render in Node and then running in a ruby / php runtime to compile. Looking for feedback here, let me know.
+- [Online editor](https://editor.bootstrapemail.com)
 
 ___
 

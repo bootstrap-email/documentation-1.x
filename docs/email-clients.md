@@ -1,10 +1,8 @@
 ---
 layout: docs
 title:  "Email Clients"
+badges: false
 ---
-<h1 class="mt-0 h2 mb-2">Supported Email Clients</h1>
-<hr>
-
 <ul class="supported-client-list">
   <li><img src="/img/icons/check-green.svg" />Apple Mail macOS</li>
   <li><img src="/img/icons/check-green.svg" />Apple Mail iOS</li>

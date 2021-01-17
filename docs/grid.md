@@ -1,11 +1,10 @@
 ---
 layout: docs
 title:  "Grid"
+badges: true
 themeable: false
 responsive: true
 ---
-{% include doc-header.html %}
-
 Grids work just like they do in Bootstrap, based on a 12 column grid. Make a row and give it columns. By default the grid holds it's structure on every device.
 
 ```html

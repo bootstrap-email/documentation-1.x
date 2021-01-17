@@ -1,11 +1,10 @@
 ---
 layout: docs
 title:  "Button"
+badges: true
 themeable: true
 responsive: false
 ---
-{% include doc-header.html %}
-
 Use a button on an anchor tag to link out of an email.
 
 <div class="alert alert-info">
