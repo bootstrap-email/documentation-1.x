@@ -5,17 +5,39 @@ badges: true
 themeable: false
 responsive: true
 ---
-There are two types of spacing Bootstrap Email supports. Padding (applied to the inside of table cells) and Margin (in the form of vertical spacers).
-Just like Bootstrap there are the `.p{side}-{size}`and similarly for margin helpers.
+There are three types of spacing Bootstrap Email supports. Padding (applied to the inside of table cells) and Margin (in the form of vertical spacers) and Spacers which are used to take up space between elements vertically.
+<div class="table-utilities">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Class</th>
+        <th>Properties</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for spacing in site.data.spacings %}
+        <tr><td>.p-{{ spacing }}</td><td>padding: {{ spacing | times: 4 }}px;</td></tr>
+        <tr><td>.px-{{ spacing }}</td><td>padding-left: {{ spacing | times: 4 }}px; padding-right: {{ spacing | times: 4 }}px;</td></tr>
+        <tr><td>.py-{{ spacing }}</td><td>padding-top: {{ spacing | times: 4 }}px; padding-bottom: {{ spacing | times: 4 }}px;</td></tr>
+        <tr><td>.pt-{{ spacing }}</td><td>padding-top: {{ spacing | times: 4 }}px;</td></tr>
+        <tr><td>.pr-{{ spacing }}</td><td>padding-right: {{ spacing | times: 4 }}px;</td></tr>
+        <tr><td>.pb-{{ spacing }}</td><td>padding-bottom: {{ spacing | times: 4 }}px;</td></tr>
+        <tr><td>.pl-{{ spacing }}</td><td>padding-left: {{ spacing | times: 4 }}px;</td></tr>
+      {% endfor %}
+      {% for spacing in site.data.spacings %}
+        <tr><td>.my-{{ spacing }}</td><td>Make a {{ spacing | times: 4 }}px spacer above and below</td></tr>
+        <tr><td>.mt-{{ spacing }}</td><td>Make a {{ spacing | times: 4 }}px spacer above</td></tr>
+        <tr><td>.mb-{{ spacing }}</td><td>Make a {{ spacing | times: 4 }}px spacer below</td></tr>
+      {% endfor %}
+      {% for spacing in site.data.spacings %}
+        <tr><td>.s-{{ spacing }}</td><td>Make a spacer {{ spacing | times: 4 }}px tall</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
 
 List of supported classes:
 ```css
-.w-25     /* width  25% */
-.w-50     /* width  50% */
-.w-75     /* width  75% */
-.w-100    /* width  100% */
-.w-auto   /* width  auto % */
-
 .p-{0-5}  /* padding on all sides */
 .pt-{0-5} /* padding top */
 .pr-{0-5} /* padding right */

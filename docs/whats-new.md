@@ -5,6 +5,7 @@ badges: false
 ---
 #### New Additions in v1.x since v0.x
 - More ways to compile, now supports [command line](#), and plain [Ruby](#) implementation (in addition to existing [Rails](#) and [online editor](#) support).
+- Unused styles in the `<head>` are now purged to reduce the final compiled document size.
 - New sizing classes, great for images. [View Sizing Docs](#)
 - New gutter sizing classes for grid. [View Grid Docs](#)
 - New space between classes to space children elements in vertical and horizontal directions. [View Spacing Docs](#)

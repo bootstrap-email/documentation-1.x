@@ -5,6 +5,28 @@ badges: true
 themeable: true
 responsive: false
 ---
+<div class="table-utilities">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Class</th>
+        <th>Properties</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in site.data.theme_colors %}
+        <tr><td>.text-{{ item.name }}</td><td>color: {{ item.color }};</td><td style="color: {{ item.color  }};">Email</td></tr>
+      {% endfor %}
+      {% for item in site.data.palette_colors %}
+        <tr><td>.text-{{ item.name }}</td><td>color: {{ item.color }};</td><td style="color: {{ item.color  }};">Email</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+
+
 Since emails render mostly consistently with tables, many of the components are built into tables. These color classes apply to the current element as well as the child `&lg;td&gt;` so you can use it on a component it will still work if the component is compiled into a table.
 
 #### Text Color

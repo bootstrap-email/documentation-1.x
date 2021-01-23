@@ -4,12 +4,39 @@ title:  "Setup"
 badges: false
 ---
 #### Environment Support
-- Command Line
-- Ruby
-- Ruby on Rails
+- [Command Line](#command-line)
+- [Ruby](#ruby)
+- [Ruby on Rails](#ruby-on-rails)
 - [Online editor](https://editor.bootstrapemail.com)
 
 ___
+
+#### Command Line
+
+[Ruby](#) is required to be installed on the machine you are using to run Bootstrap Email.
+
+1: Install bootstrap email via [Ruby Gems](#)
+```bash
+gem install bootstrap-email
+```
+
+2: There are many ways to use the command line to compile emails:
+```bash
+# compile all files in the current directory
+bootstrap-email
+# compile the file email.html and save it to the file out.html
+bootstrap-email email.html > out.html
+# compile a relative path to a file
+bootstrap-email ./public/index.html
+# specify a path pattern and a destination directory for compiled emails to be saved to
+bootstrap-email -p 'emails/*' -d emails/output
+# pipe a file into bootstrap-email
+cat input.html | bootstrap-email
+# specify config path to use to customize things like colors
+bootstrap-email -c bootstrap-email.scss
+```
+
+Help: run the command `bootstrap-email -h` for help on all options.
 
 #### Rails Setup
 
@@ -17,7 +44,7 @@ Setup with Rails could not be easier.
 
 1: Add Bootstrap Email to your `Gemfile`
 
-```
+```ruby
 gem 'bootstrap-email'
 ```
 
@@ -69,7 +96,7 @@ Thats it! Now all you need to do to use it instead of using the `mail()` method,
 class ExampleMailer < ApplicationMailer
 
   def greet
-    make_bootstrap_mail(
+    bootstrap_mail(
       to: 'to@example.com',
       from: 'from@example.com',
       subject: 'Hi From Bootstrap Email',
@@ -83,7 +110,7 @@ You can also use the `format` in the usual way.
 class ExampleMailer < ApplicationMailer
 
   def greet
-    make_bootstrap_mail(
+    bootstrap_mail(
       to: 'to@example.com',
       from: 'from@example.com',
       subject: 'Hi From Bootstrap Email',
@@ -94,6 +121,3 @@ class ExampleMailer < ApplicationMailer
   end
 end
 ```
-
-#### Compatibility note
-The old method `bootstrap_mail` is still available for compatibility.
