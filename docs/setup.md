@@ -30,6 +30,8 @@ bootstrap-email email.html > out.html
 bootstrap-email ./public/index.html
 # specify a path pattern and a destination directory for compiled emails to be saved to
 bootstrap-email -p 'emails/*' -d emails/output
+# compile for a string
+bootstrap-email -s '<a href="#" class="btn btn-primary">Some Button</a>'
 # pipe a file into bootstrap-email
 cat input.html | bootstrap-email
 # specify config path to use to customize things like colors
