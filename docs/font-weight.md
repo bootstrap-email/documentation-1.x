@@ -1,6 +1,6 @@
 ---
 layout: docs
-title:  "Line Height"
+title:  "Text Weight"
 badges: true
 themeable: false
 responsive: false
@@ -14,8 +14,8 @@ responsive: false
       </tr>
     </thead>
     <tbody>
-      {% for size in site.data.line_heights %}
-        <tr><td>.lh-{{ size.name }}</td><td>line-height: {{ size.size }};</td></tr>
+      {% for weight in site.data.font_weights %}
+        <tr><td>.fw-{{ weight }}</td><td>font-weight: {{ weight }};</td></tr>
       {% endfor %}
     </tbody>
   </table>

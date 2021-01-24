@@ -40,9 +40,26 @@ bootstrap-email -c bootstrap-email.scss
 
 Help: run the command `bootstrap-email -h` for help on all options.
 
-#### Rails Setup
+#### Ruby
 
-Setup with Rails could not be easier.
+1: Add Bootstrap Email to your `Gemfile`
+
+```ruby
+gem 'bootstrap-email'
+```
+
+2: Usage is simple, there are two ways to call Bootstrap Email, string and file.
+```ruby
+# Pass in any html string or html document as a string
+html = '<a href="#" class="btn btn-primary">A button</a>'
+BootstrapEmail::Compiler.new(html).perform_full_compile
+
+# Pass in a full path to a file
+file_path = File.expand_path('path/to/a/file.html', __dir__)
+BootstrapEmail::Compiler.new(file_path, type: :file).perform_full_compile
+```
+
+#### Ruby on Rails
 
 1: Add Bootstrap Email to your `Gemfile`
 
@@ -51,15 +68,17 @@ gem 'bootstrap-email'
 ```
 
 2: You need to create the mailer template which will wrap the email content. Create the file `/app/views/layouts/bootstrap-mailer.html.erb` and paste this HTML into it. (It is very similar to the default mailer).
-
 ```erb
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <%= stylesheet_link_tag "application-mailer", media: "all" %>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
   </head>
-  <body class="bg-light">
+  <body>
     <%= yield %>
   </body>
 </html>
@@ -73,7 +92,7 @@ end
 ```
 Refer to the [official ActionMailer documentation](http://guides.rubyonrails.org/action_mailer_basics.html#action-mailer-layouts) on more info about using a different layout for different mailers.
 
-4: Create a new stylesheet `/app/assets/stylesheets/application-mailer.scss` and import `bootstrap-email`. This is where your custom styles and overrides that you want to be inlined should live.
+<!-- 4: Create a new stylesheet `/app/assets/stylesheets/application-mailer.scss` and import `bootstrap-email`. This is where your custom styles and overrides that you want to be inlined should live.
 
 ```sass
 @import 'bootstrap-email';
@@ -89,14 +108,13 @@ Rails.application.config.assets.precompile += %w( application-mailer.scss )
 
 You can also create the view `/app/views/example_mailer/greet.text.erb`. In this case don't forget to create also the textual layout `/app/views/layouts/example_mailer.text.erb`.
 
-If you do  not create a textual view file, a text part is automatically added by the `premailer-rails` gem.
+If you do  not create a textual view file, a text part is automatically added by the `premailer-rails` gem. -->
 
-#### Usage
-Thats it! Now all you need to do to use it instead of using the `mail()` method, you use the `make_bootstrap_mail()` method to kick off Bootstrap Email compilation!
+
+4: That's it! Now all you need to do to use it instead of using the `mail()` method, you use the `bootstrap_mail()` method to kick off Bootstrap Email compilation!
 
 ```ruby
 class ExampleMailer < ApplicationMailer
-
   def greet
     bootstrap_mail(
       to: 'to@example.com',
@@ -110,7 +128,6 @@ end
 You can also use the `format` in the usual way.
 ```ruby
 class ExampleMailer < ApplicationMailer
-
   def greet
     bootstrap_mail(
       to: 'to@example.com',

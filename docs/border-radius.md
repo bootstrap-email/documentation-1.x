@@ -14,53 +14,16 @@ responsive: false
       </tr>
     </thead>
     <tbody>
-      <tr><td>.border-0</td><td>border-radius: 0;</td></tr>
-      <tr><td>.border-sm</td><td>border-radius: 0;</td></tr>
+      <tr><td>.rounded-0</td><td>border-radius: 0px;</td></tr>
+      <tr><td>.rounded-sm</td><td>border-radius: 3px;</td></tr>
+      <tr><td>.rounded</td><td>border-radius: 6px;</td></tr>
+      <tr><td>.rounded-top</td><td>border-top-left-radius: 6px;<br>border-top-right-radius: 6px;</td></tr>
+      <tr><td>.rounded-right</td><td>border-top-right-radius: 6px;<br>border-bottom-right-radius: 6px;</td></tr>
+      <tr><td>.rounded-bottom</td><td>border-bottom-left-radius: 6px;<br>border-bottom-right-radius: 6px;</td></tr>
+      <tr><td>.rounded-left</td><td>border-top-left-radius: 6px;<br>border-bottom-left-radius: 6px;</td></tr>
+      <tr><td>.rounded-lg</td><td>border-radius: 9px;</td></tr>
+      <tr><td>.rounded-xl</td><td>border-radius: 12px;</td></tr>
+      <tr><td>.rounded-pill</td><td>border-radius: 9999px;</td></tr>
     </tbody>
   </table>
 </div>
-
-
-@include border-radius-util('.rounded-0') {
-  border-radius: 0;
-}
-
-@include border-radius-util('.rounded-sm') {
-  border-radius: $border-radius-sm;
-}
-
-@include border-radius-util('.rounded') {
-  border-radius: $border-radius;
-}
-
-@include border-radius-util('.rounded-top') {
-  border-top-left-radius: $border-radius;
-  border-top-right-radius: $border-radius;
-}
-
-@include border-radius-util('.rounded-right') {
-  border-top-right-radius: $border-radius;
-  border-bottom-right-radius: $border-radius;
-}
-
-@include border-radius-util('.rounded-bottom') {
-  border-bottom-right-radius: $border-radius;
-  border-bottom-left-radius: $border-radius;
-}
-
-@include border-radius-util('.rounded-left') {
-  border-top-left-radius: $border-radius;
-  border-bottom-left-radius: $border-radius;
-}
-
-@include border-radius-util('.rounded-lg') {
-  border-radius: $border-radius-lg;
-}
-
-@include border-radius-util('.rounded-xl') {
-  border-radius: $border-radius-xl;
-}
-
-@include border-radius-util('.rounded-pill') {
-  border-radius: $border-radius-pill;
-}

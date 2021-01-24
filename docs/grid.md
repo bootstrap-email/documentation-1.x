@@ -5,7 +5,7 @@ badges: true
 themeable: false
 responsive: true
 ---
-Grids work just like they do in Bootstrap, based on a 12 column grid. Make a row and give it columns. By default the grid holds it's structure on every device.
+Grids work just like they do in Bootstrap, based on a 12 column grid. Make a row and give it columns. By default the grid holds it's structure on every device. It has a default horizontal gutter between elements, to customize horizontal and vertical gutters see the [Gutter Docs](/docs/gutters).
 
 ```html
 <div class="row">
@@ -16,9 +16,9 @@ Grids work just like they do in Bootstrap, based on a 12 column grid. Make a row
 ```
 
 <div class="row mb-4">
-  <div class="col-3 border">.col-3</div>
-  <div class="col-4 border">.col-4</div>
-  <div class="col-5 border">.col-5</div>
+  <div class="col-3"><div class="border">.col-3</div></div>
+  <div class="col-4"><div class="border">.col-4</div></div>
+  <div class="col-5"><div class="border">.col-5</div></div>
 </div>
 
 #### Responsive
@@ -33,7 +33,7 @@ You can use the responsive <code>lg</code> modifier to make the grid snap back t
 ```
 
 <div class="row">
-  <div class="col-lg-3 border">.col-3</div>
-  <div class="col-lg-4 border">.col-4</div>
-  <div class="col-lg-5 border">.col-5</div>
+  <div class="col-lg-3"><div class="border">.col-3</div></div>
+  <div class="col-lg-4"><div class="border">.col-4</div></div>
+  <div class="col-lg-5"><div class="border">.col-5</div></div>
 </div>

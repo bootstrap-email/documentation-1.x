@@ -35,36 +35,7 @@ There are three types of spacing Bootstrap Email supports. Padding (applied to t
     </tbody>
   </table>
 </div>
-
-List of supported classes:
-```css
-.p-{0-5}  /* padding on all sides */
-.pt-{0-5} /* padding top */
-.pr-{0-5} /* padding right */
-.pb-{0-5} /* padding bottom */
-.pl-{0-5} /* padding left */
-.px-{0-5} /* padding left and right */
-.py-{0-5} /* padding top and bottom */
-
-.mt-{0-5} /* margin top */
-.mb-{0-5} /* margin bottom */
-.my-{0-5} /* margin top and bottom */
-
-.s-{0-5} /* spacer with size */
-```
-
 Note: Margin is only supported on the top and bottom.
-
-#### Responsive
-By default these classes target all devices. However you you just wanted to target desktop you could do `.w-lg-25`. For all of these classes you can apply a `lg-` to the middle to make it just apply to desktop devices. Or say you want a 100% button on mobile and a 50% width centered button on desktop. That would look like this:
-```html
-<a class="w-100 w-lg-25 mx-auto btn btn-primary btn-lg" href="https://bootstrapemail.com">Tada</a>
-```
-
-That is the power of Bootstrap email right there!
-<div class="alert alert-info">
-  <strong>Neato!</strong> All of the above classes are responsive so putting `mt-1 mt-lg-3` on a element with have a spacing of 1 on mobile and a spacing of 3 on desktop.
-</div>
 
 #### Padding
 ```html

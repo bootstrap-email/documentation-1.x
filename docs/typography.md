@@ -5,9 +5,7 @@ badges: true
 themeable: false
 responsive: false
 ---
-`<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`, `.h1`, `.h2`, `.h3`, `.h4`, `.h5`, `.h6`,
-`<strong>`, `<u>`, `<em>`, `<s>`, `.text-left`, `.text-center`, `.text-right`
-
+Many basic typography options. If you want more text control check out [Text Color](/docs/text-color), [Text Size](/docs/text-size), [Font Weight](/docs/font-weight), and [Line Height](/docs/line-height).
 ```html
 <h1>h1</h1>
 <h2>h2</h2>
@@ -21,6 +19,12 @@ responsive: false
 <div class="h4">any tag as h4</div>
 <div class="h5">any tag as h5</div>
 <div class="h6">any tag as h6</div>
+<h1 class="display-1">Display 1</h1>
+<h1 class="display-2">Display 2</h1>
+<h1 class="display-3">Display 3</h1>
+<h1 class="display-4">Display 4</h1>
+<h1 class="display-5">Display 5</h1>
+<h1 class="display-6">Display 6</h1>
 <strong>bold text</strong>
 <u>underlined text</u>
 <em>italicized text</em>
@@ -42,6 +46,12 @@ responsive: false
 #### any tag as h4
 ##### any tag as h5
 ###### any tag as h6
+<h1 class="display-1">Display 1</h1>
+<h1 class="display-2">Display 2</h1>
+<h1 class="display-3">Display 3</h1>
+<h1 class="display-4">Display 4</h1>
+<h1 class="display-5">Display 5</h1>
+<h1 class="display-6">Display 6</h1>
 <strong>bold text</strong>
 <u>underlined text</u>
 <em>italicized text</em>
