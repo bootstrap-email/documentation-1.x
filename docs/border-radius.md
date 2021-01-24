@@ -14,16 +14,13 @@ responsive: false
       </tr>
     </thead>
     <tbody>
-      <tr><td>.rounded-0</td><td>border-radius: 0px;</td></tr>
-      <tr><td>.rounded-sm</td><td>border-radius: 3px;</td></tr>
-      <tr><td>.rounded</td><td>border-radius: 6px;</td></tr>
-      <tr><td>.rounded-top</td><td>border-top-left-radius: 6px;<br>border-top-right-radius: 6px;</td></tr>
-      <tr><td>.rounded-right</td><td>border-top-right-radius: 6px;<br>border-bottom-right-radius: 6px;</td></tr>
-      <tr><td>.rounded-bottom</td><td>border-bottom-left-radius: 6px;<br>border-bottom-right-radius: 6px;</td></tr>
-      <tr><td>.rounded-left</td><td>border-top-left-radius: 6px;<br>border-bottom-left-radius: 6px;</td></tr>
-      <tr><td>.rounded-lg</td><td>border-radius: 9px;</td></tr>
-      <tr><td>.rounded-xl</td><td>border-radius: 12px;</td></tr>
-      <tr><td>.rounded-pill</td><td>border-radius: 9999px;</td></tr>
+      {% for border in site.data.border_radiuses %}
+        <tr><td>.rounded{{ border.name }}</td><td>border-radius: {{ border.radius }}px;</td></tr>
+        <tr><td>.rounded-top{{ border.name }}</td><td>border-top-left-radius: {{ border.radius }}px;<br>border-top-right-radius: {{ border.radius }}px;</td></tr>
+        <tr><td>.rounded-right{{ border.name }}</td><td>border-top-right-radius: {{ border.radius }}px;<br>border-bottom-right-radius: {{ border.radius }}px;</td></tr>
+        <tr><td>.rounded-bottom{{ border.name }}</td><td>border-bottom-left-radius: {{ border.radius }}px;<br>border-bottom-right-radius: {{ border.radius }}px;</td></tr>
+        <tr><td>.rounded-left{{ border.name }}</td><td>border-top-left-radius: {{ border.radius }}px;<br>border-bottom-left-radius: {{ border.radius }}px;</td></tr>
+      {% endfor %}
     </tbody>
   </table>
 </div>
