@@ -15,14 +15,15 @@ ___
 
 [Ruby](#) is required to be installed on the machine you are using to run Bootstrap Email.
 
-1: Install bootstrap email via [Ruby Gems](#)
+1: Install bootstrap email via [Ruby Gems](https://rubygems.org/gems/bootstrap-email)
 ```bash
-gem install bootstrap-email
+# to get the prerelease alpha version
+gem install bootstrap-email --pre
 ```
 
 2: There are many ways to use the command line to compile emails:
 ```bash
-# compile all files in the current directory
+# compile all files ending in .html in the current directory
 bootstrap-email
 # compile the file email.html and save it to the file out.html
 bootstrap-email email.html > out.html
@@ -45,7 +46,7 @@ Help: run the command `bootstrap-email -h` for help on all options.
 1: Add Bootstrap Email to your `Gemfile`
 
 ```ruby
-gem 'bootstrap-email'
+gem 'bootstrap-email', ">= 1.0.0.alpha"
 ```
 
 2: Usage is simple, there are two ways to call Bootstrap Email, string and file.
@@ -64,7 +65,7 @@ BootstrapEmail::Compiler.new(file_path, type: :file).perform_full_compile
 1: Add Bootstrap Email to your `Gemfile`
 
 ```ruby
-gem 'bootstrap-email'
+gem 'bootstrap-email', ">= 1.0.0.alpha"
 ```
 
 2: You need to create the mailer template which will wrap the email content. Create the file `/app/views/layouts/bootstrap-mailer.html.erb` and paste this HTML into it. (It is very similar to the default mailer).
