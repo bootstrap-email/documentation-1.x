@@ -13,7 +13,7 @@ Bootstrap Email works by taking HTML marked up with supported Bootstrap classes 
 Bootstrap Email uses an approach to email that feels like writing normal HTML. Some libraries use some sort of custom XML type templating, but the issue with that is you can't apply lot's of classes to a single element. This is an example of what you can do and why it is so powerful.
 
 ```html
-<a class="w-100 w-lg-50 mx-auto btn btn-primary" href="https://bootstrapemail.com">Tada</a>
+<a class="w-100 w-lg-50 align-center btn btn-primary" href="https://bootstrapemail.com">Tada</a>
 ```
 
 #### Contributing
