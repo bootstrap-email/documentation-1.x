@@ -1,6 +1,6 @@
 ---
 layout: docs
-title:  "Gutters"
+title:  "Gap"
 badges: true
 themeable: false
 responsive: true

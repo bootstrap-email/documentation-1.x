@@ -59,7 +59,7 @@ You can use the responsive <code>lg</code> modifier to make the grid snap back t
 ```
 
 {% include header.html name="Gap" hr="true" %}
-To customize horizontal and vertical gutters see the [Gap Docs](/docs/gaps) for more details. For example `row gap-0` would remove the gap between cells. In the example below, the `gap-12` adds a `48px` gap between all cells. The default gap between cells is `24px`.
+To customize horizontal and vertical gutters see the [Gap Docs](/docs/gap) for more details. For example `row gap-0` would remove the gap between cells. In the example below, the `gap-12` adds a `48px` gap between all cells. The default gap between cells is `24px`.
 
 ```html
 <div class="row gap-12">
