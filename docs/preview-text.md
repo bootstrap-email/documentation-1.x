@@ -3,10 +3,26 @@ layout: docs
 title:  "Preview Text"
 tagline: "Like a second subject for your emails."
 sections:
+  - Reference
   - Usage
   - Compiled Example
 badges: false
 ---
+<a class="anchor" name="reference"></a>
+<div class="table-utilities">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Tag</th>
+        <th>Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="class">&lt;preview&gt;</td><td class="result">custom element for adding preview text to emails</td></tr>
+    </tbody>
+  </table>
+</div>
+
 If you aren't familiar with preview text, it is the text that shows up in your inbox as a preview of the content inside the email. Here is more info about what it is and how it works on [Litmus.com](https://litmus.com/blog/the-ultimate-guide-to-preview-text-support)
 <img class="d-block mx-auto w-50" src="/img/email-preview-text.png"/>
 
