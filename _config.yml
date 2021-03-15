@@ -30,6 +30,8 @@ markdown: kramdown
 theme: false
 plugins:
   - jekyll-feed
+kramdown:
+  auto_id_prefix: 'doc-'
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

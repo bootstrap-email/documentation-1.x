@@ -69,17 +69,19 @@
       </div>
     </div>
     <div class="col-lg-2 px-2 py-1 pt-lg-3 px-sm-4 p-lg-4 d-none d-lg-block">
-      <div class="sticky-sidebar">
-        <h6 class="text-muted">On this page</h6>
-        <hr class="my-1">
-        <ul class="on-this-page text-muted">
-          {% for section in page.sections %}
-            <li>
-              <a href="#{{ section | downcase | replace: ' ', '-' }}">{{ section }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
+      {% if page.sections.size > 0 %}
+        <div class="sticky-sidebar">
+          <h6 class="text-muted">On this page</h6>
+          <hr class="my-1">
+          <ul class="on-this-page text-muted">
+            {% for section in page.sections %}
+              <li>
+                <a href="#{{ section | downcase | replace: ' ', '-' }}">{{ section }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
     </div>
   </div>
 </div>

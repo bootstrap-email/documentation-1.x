@@ -3,6 +3,7 @@ layout: docs
 title:  "Email Clients"
 badges: false
 ---
+Bootstrap Email works hard to support as many possible email clients as possible, that way all users get as close to the same experience as possible. Certain exceptions to this are minor visual things like [border radius](/docs/border-radius) which will just fall back to square corners on clients that don't support them.
 <ul class="supported-client-list">
   <li><img src="/img/icons/check-green.svg" />Apple Mail macOS</li>
   <li><img src="/img/icons/check-green.svg" />Apple Mail iOS</li>
@@ -20,5 +21,7 @@ badges: false
   <li><img src="/img/icons/check-green.svg" />Modern Email Clients</li>
   <li><img src="/img/icons/check-green.svg" />Any many more...</li>
 </ul>
+
+<a class="btn btn-outline-primary" href="https://github.com/bootstrap-email/bootstrap-email/issues">I'm Experiencing an Email Client Issue</a>
 
 <img src="/img/gifs/aol.gif" class="w-75 mx-auto d-block" />
