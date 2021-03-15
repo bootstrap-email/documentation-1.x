@@ -2,9 +2,9 @@
 {% include navbar.html active='documentation' %}
 <div class="container pt-4">
   <div class="row">
-    <div class="col-md-2 px-2 py-1 pt-md-3 px-sm-4 p-md-4">
+    <div class="col-md-4 col-lg-2 px-2 py-1 pt-md-3 px-sm-4 p-md-4">
       <a aria-controls="collapseDocsNav" aria-expanded="false" class="btn btn-outline-secondary w-100 d-md-none collapsed" data-toggle="collapse" href="#collapseDocsNav">Menu</a>
-      <aside class="d-md-block collapse overflow-auto pt-4 pt-md-0" style="height: calc(100vh - 100px);" id="collapseDocsNav">
+      <aside class="d-md-block collapse overflow-auto pt-4 pt-md-0 sticky-sidebar" style="height: calc(100vh - 100px);" id="collapseDocsNav">
         <small>Getting Started</small>
         <ul>
           <li class="{% if page.title == "Introduction" %}active{% endif %}"><a href="/docs/introduction">Introduction</a></li>
@@ -68,20 +68,22 @@
         </div>
       </div>
     </div>
-    <div class="col-md-2 px-2 py-1 pt-md-3 px-sm-4 p-md-4">
-      <h6 class="text-muted">On this page</h6>
-      <hr class="my-1">
-      <ul class="on-this-page text-muted">
-        <li>
-          <a href="#class-reference">Class reference</a>
-        </li>
-        <li>
-          <a href="#usage">Usage</a>
-        </li>
-        <li>
-          <a href="#compiled-example">Compiled Example</a>
-        </li>
-      </ul>
+    <div class="col-lg-2 px-2 py-1 pt-lg-3 px-sm-4 p-lg-4 d-none d-lg-block">
+      <div class="sticky-sidebar">
+        <h6 class="text-muted">On this page</h6>
+        <hr class="my-1">
+        <ul class="on-this-page text-muted">
+          <li>
+            <a href="#class-reference">Class reference</a>
+          </li>
+          <li>
+            <a href="#usage">Usage</a>
+          </li>
+          <li>
+            <a href="#compiled-example">Compiled Example</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

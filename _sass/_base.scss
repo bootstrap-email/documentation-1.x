@@ -20,6 +20,19 @@ header {
   background-color: $purple !important;
 }
 
+@media (min-width: 768px) {
+  .nav-docs {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .sticky-sidebar {
+    position: sticky;
+    top: 100px;
+    z-index: 99;
+  }
+}
+
 .nav-docs {
   background-color: white !important;
   border-bottom: 1px solid #e2e8f0;
