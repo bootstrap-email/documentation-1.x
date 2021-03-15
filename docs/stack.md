@@ -155,5 +155,4 @@ Stacks use HTMl tables to generate their layouts, that means we can use the powe
     </tr>
   </tbody>
 </table>
-
 ```
