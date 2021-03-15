@@ -5,6 +5,11 @@ html, body {
   font-size: 16px;
 }
 
+hr {
+  background-color: #e2e8f0;
+  opacity: 1;
+}
+
 header {
   // https://www.heropatterns.com/
   background-color: #ffffff;
@@ -61,7 +66,30 @@ aside {
       }
     }
   }
+}
 
+.on-this-page {
+  padding-left: 0;
+  li {
+    list-style: none;
+    font-size: 0.875rem;
+    margin: 0;
+    &:hover,
+    &.active {
+      background-color: #6f4da221;
+      border-radius: 4px;
+      a {
+        color: $purple !important;
+      }
+    }
+
+    a {
+      color: #616161;
+      padding: 0.3rem 0.5rem;
+      display: block;
+      text-decoration: none;
+    }
+  }
 }
 
 .card-docs {
@@ -209,10 +237,12 @@ footer {
     font-size: 14px;
   }
   tbody {
-    td:nth-child(1) {
+    .class {
       color: $purple;
+      font-weight: 500;
+      font-family: var(--bs-font-monospace);
     }
-    td:nth-child(2) {
+    .result {
       color: #6c757d;
     }
     tr:last-child td {

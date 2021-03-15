@@ -1,10 +1,10 @@
 {% include open-html.html %}
 {% include navbar.html active='documentation' %}
-<div class="container pt-2">
+<div class="container pt-4">
   <div class="row">
     <div class="col-md-2 px-2 py-1 pt-md-3 px-sm-4 p-md-4">
       <a aria-controls="collapseDocsNav" aria-expanded="false" class="btn btn-outline-secondary w-100 d-md-none collapsed" data-toggle="collapse" href="#collapseDocsNav">Menu</a>
-      <aside class="d-md-block collapse pt-4 overflow-auto" style="height: calc(100vh - 100px);" id="collapseDocsNav">
+      <aside class="d-md-block collapse overflow-auto pt-4 pt-md-0" style="height: calc(100vh - 100px);" id="collapseDocsNav">
         <small>Getting Started</small>
         <ul>
           <li class="{% if page.title == "Introduction" %}active{% endif %}"><a href="/docs/introduction">Introduction</a></li>
@@ -60,13 +60,28 @@
         </ul>
       </aside>
     </div>
-    <div class="col-md-10 p-2 p-md-4">
+    <div class="col-md-8">
       <div class="card card-docs">
         <div class="card-body">
           {% include doc-header.html %}
           {{ content }}
         </div>
       </div>
+    </div>
+    <div class="col-md-2 px-2 py-1 pt-md-3 px-sm-4 p-md-4">
+      <h6 class="text-muted">On this page</h6>
+      <hr class="my-1">
+      <ul class="on-this-page text-muted">
+        <li>
+          <a href="#class-reference">Class reference</a>
+        </li>
+        <li>
+          <a href="#usage">Usage</a>
+        </li>
+        <li>
+          <a href="#compiled-example">Compiled Example</a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
