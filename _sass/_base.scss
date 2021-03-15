@@ -263,3 +263,25 @@ footer {
     }
   }
 }
+
+.badge-input, .badge-output {
+  display: table;
+  margin-bottom: -26px;
+  position: relative;
+  z-index: 10;
+}
+
+.badge-input {
+  background-color: #6c757d;
+}
+
+.badge-output {
+  background-color: $purple;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -75px;
+  visibility: hidden;
+}

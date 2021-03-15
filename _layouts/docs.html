@@ -73,15 +73,11 @@
         <h6 class="text-muted">On this page</h6>
         <hr class="my-1">
         <ul class="on-this-page text-muted">
-          <li>
-            <a href="#class-reference">Class reference</a>
-          </li>
-          <li>
-            <a href="#usage">Usage</a>
-          </li>
-          <li>
-            <a href="#compiled-example">Compiled Example</a>
-          </li>
+          {% for section in page.sections %}
+            <li>
+              <a href="#{{ section | downcase | replace: ' ', '-' }}">{{ section }}</a>
+            </li>
+          {% endfor %}
         </ul>
       </div>
     </div>

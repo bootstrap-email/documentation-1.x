@@ -2,12 +2,16 @@
 layout: docs
 title:  "Container"
 tagline: "Give the email center aligned structure."
+sections:
+  - Class Reference
+  - Usage
+  - Compiled Example
 badges: true
 themeable: false
 responsive: true
 ---
 
-<a name="class-reference"></a>
+<a class="anchor" name="class-reference"></a>
 <div class="table-utilities">
   <table class="table">
     <thead>
@@ -23,10 +27,9 @@ responsive: true
   </table>
 </div>
 
-<a name="usage"></a>
+<a class="anchor" name="usage"></a>
 <h2 class="h3">Usage</h2>
 
-##### Container
 Using the `container` class is the most common default email structure recommended. It should be used to wrap your entire pages contents. It has a 600px max-width which is standard for broad email support. It will be responsive on mobile devices.
 
 ```html
@@ -35,7 +38,6 @@ Using the `container` class is the most common default email structure recommend
 </div>
 ```
 
-##### Container fluid
 A `container-fluid` is unlike a container in that it doesn't have it's max-width set. It does however still have padding on the edges to give the content better spacing towards the edge of the email.
 
 ```html
@@ -45,17 +47,17 @@ A `container-fluid` is unlike a container in that it doesn't have it's max-width
 ```
 
 <hr class="my-5">
-<a name="compiled-example"></a>
+<a class="anchor" name="compiled-example"></a>
 <h2 class="h3">Compiled Example</h2>
 
-##### Input
+<span class="badge rounded-pill badge-input">Input</span>
 ```html
 <div class="container">
   <!-- Content here -->
 </div>
 ```
 
-##### Output
+<span class="badge rounded-pill badge-output">Output</span>
 ```html
 <table class="container" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
   <tbody>
