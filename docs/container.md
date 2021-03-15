@@ -28,7 +28,6 @@ responsive: true
 </div>
 
 {% include header.html name="Usage" hr="false" %}
-
 Using the `container` class is the most common default email structure recommended. It should be used to wrap your entire pages contents. It has a 600px max-width which is standard for broad email support. It will be responsive on mobile devices.
 
 ```html
@@ -46,7 +45,6 @@ A `container-fluid` is unlike a container in that it doesn't have it's max-width
 ```
 
 {% include header.html name="Compiled Example" hr="true" %}
-
 <span class="badge rounded-pill badge-input">Input</span>
 ```html
 <div class="container">
