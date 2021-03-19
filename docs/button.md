@@ -24,16 +24,20 @@ responsive: false
     <tbody>
       <tr><td class="class">.btn</td><td class="result">the base button class to setup structure</td></tr>
       {% for item in site.data.theme_colors %}
-        <tr><td class="class">.btn-{{ item.name }}</td><td class="result">background-color: {{ item.color }};</td></tr>
+        <tr><td class="class">.btn-{{ item.name }}</td><td class="css">background-color: {{ item.color }};</td></tr>
       {% endfor %}
       {% for item in site.data.palette_colors %}
-        <tr><td class="class">.btn-{{ item.name }}</td><td class="result">background-color: {{ item.color }};</td></tr>
+        {% if item.name != 'transparent' %}
+          <tr><td class="class">.btn-{{ item.name }}</td><td class="css">background-color: {{ item.color }};</td></tr>
+        {% endif %}
       {% endfor %}
       {% for item in site.data.theme_colors %}
-        <tr><td class="class">.btn-outline-{{ item.name }}</td><td class="result">border-color: {{ item.color }}; text-color: {{ item.color }}; background-color: transparent;</td></tr>
+        <tr><td class="class">.btn-outline-{{ item.name }}</td><td class="css">border-color: {{ item.color }}; text-color: {{ item.color }}; background-color: transparent;</td></tr>
       {% endfor %}
       {% for item in site.data.palette_colors %}
-        <tr><td class="class">.btn-outline-{{ item.name }}</td><td class="result">border-color: {{ item.color }}; text-color: {{ item.color }}; background-color: transparent;</td></tr>
+        {% if item.name != 'transparent' %}
+          <tr><td class="class">.btn-outline-{{ item.name }}</td><td class="css">border-color: {{ item.color }}; text-color: {{ item.color }}; background-color: transparent;</td></tr>
+        {% endif %}
       {% endfor %}
     </tbody>
   </table>
@@ -67,11 +71,11 @@ Buttons are **ONLY** to be used with an anchor `<a>` tag. The there are classes 
 </div>
 
 {% include header.html name="Usage" hr="false" %}
-You can use *outlined* versions of every button by simply adding the `outline` keyword to the class like `btn-outline-primary` or `btn-outline-green-300`.
+You can use *outlined* versions of every button by simply adding the `outline` keyword to the class like `btn-outline-primary` or `btn-outline-green-500`.
 
 ```html
 <a class="btn btn-outline-primary" href="https://bootstrapemail.com">Primary</a>
-<a class="btn btn-outline-green-300" href="https://bootstrapemail.com">Green</a>
+<a class="btn btn-outline-green-500" href="https://bootstrapemail.com">Green</a>
 ```
 <a class="btn btn-outline-primary" href="https://bootstrapemail.com">Primary</a>
 <a class="btn btn-outline-success" href="https://bootstrapemail.com">Green</a>

@@ -247,13 +247,14 @@ footer {
   }
   th, td {
     border-bottom-color: #e2e8f0 !important;
-    font-size: 14px;
+    font-size: 13px;
   }
   tbody {
     .class {
       color: $purple;
       font-weight: 500;
       font-family: var(--bs-font-monospace);
+      white-space: nowrap;
     }
     .css {
       color: #6c757d;
