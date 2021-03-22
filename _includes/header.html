@@ -1,0 +1,7 @@
+{% if include.hr == "true" %}
+  <hr class="my-5">
+{% else %}
+<div class="mt-5"></div>
+{% endif %}
+<a class="anchor" name="{{ include.name | downcase | replace: ' ', '-' }}"></a>
+<h2 class="h3">{{ include.name }}</h2>

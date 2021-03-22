@@ -5,6 +5,11 @@ html, body {
   font-size: 16px;
 }
 
+hr {
+  background-color: #e2e8f0;
+  opacity: 1;
+}
+
 header {
   // https://www.heropatterns.com/
   background-color: #ffffff;
@@ -13,6 +18,19 @@ header {
 
 .bg-primary-docs {
   background-color: $purple !important;
+}
+
+@media (min-width: 768px) {
+  .nav-docs {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .sticky-sidebar {
+    position: sticky;
+    top: 100px;
+    z-index: 99;
+  }
 }
 
 .nav-docs {
@@ -55,13 +73,36 @@ aside {
 
       a {
         color: #616161;
-        padding: 0.15rem 0.5rem;
+        padding: 0.3rem 0.5rem;
         display: block;
         text-decoration: none;
       }
     }
   }
+}
 
+.on-this-page {
+  padding-left: 0;
+  li {
+    list-style: none;
+    font-size: 0.875rem;
+    margin: 0;
+    &:hover,
+    &.active {
+      background-color: #6f4da221;
+      border-radius: 4px;
+      a {
+        color: $purple !important;
+      }
+    }
+
+    a {
+      color: #616161;
+      padding: 0.3rem 0.5rem;
+      display: block;
+      text-decoration: none;
+    }
+  }
 }
 
 .card-docs {
@@ -122,9 +163,8 @@ footer {
   padding: 0.25rem 0.5rem 0.25rem 0.25rem;
   border-radius: 9999px;
   font-weight: 500;
-  margin: 0.4rem 0 0 1rem;
-  display: block;
   text-decoration: none;
+  font-size: 14px;
   .badge-check {
     background-color: #51d88a;
     border-radius: 9999px;
@@ -135,18 +175,9 @@ footer {
       color: white;
     }
   }
-  &.disabled {
-    opacity: .5;
-    .badge-check {
-      background-color: #9babb4;
-    }
-  }
 }
 
 @media (max-width: 768px) {
-  .compatibility-badge {
-    margin: -0.25rem 0.25rem 0.75rem 0;
-  }
   .docs-cta {
     margin-top: 16px !important;
     padding: 0.5rem;
@@ -206,17 +237,46 @@ footer {
   }
   th, td {
     border-bottom-color: #e2e8f0 !important;
-    font-size: 14px;
+    font-size: 13px;
   }
   tbody {
-    td:nth-child(1) {
+    .class {
       color: $purple;
+      font-weight: 500;
+      font-family: var(--bs-font-monospace);
+      white-space: nowrap;
     }
-    td:nth-child(2) {
+    .css {
+      color: #6c757d;
+      font-family: var(--bs-font-monospace);
+    }
+    .result {
       color: #6c757d;
     }
     tr:last-child td {
       border-bottom: 0 !important;
     }
   }
+}
+
+.badge-input, .badge-output {
+  display: table;
+  margin-bottom: -26px;
+  position: relative;
+  z-index: 10;
+}
+
+.badge-input {
+  background-color: #6c757d;
+}
+
+.badge-output {
+  background-color: $purple;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -75px;
+  visibility: hidden;
 }

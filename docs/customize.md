@@ -1,9 +1,15 @@
 ---
 layout: docs
 title:  "Customize"
-badges: false
+tagline: "Customize colors and default styles using SASS variables."
 ---
 If you want to customize styles like colors or spacing or even want to add custom styles to be compiled with the SCSS and inlined into your email you can use a config file. By default Bootstrap Email will look for a `bootstrap-email.config.scss` file in the root of the working directory / project.
+
+Here are the 3 files of SASS variables that you can customize by overriding:
+1. [General Variables](https://github.com/bootstrap-email/bootstrap-email/blob/master/core/scss/_variables.scss)
+2. [Color Variables](https://github.com/bootstrap-email/bootstrap-email/blob/master/core/scss/_colors.scss)
+2. [Utility Variables](https://github.com/bootstrap-email/bootstrap-email/blob/master/core/scss/_utilities.scss)
+
 This is what a basic config file should contain:
 ```scss
 //= @import bootstrap-email;

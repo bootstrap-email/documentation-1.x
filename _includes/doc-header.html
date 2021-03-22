@@ -1,13 +1,7 @@
-<div class="clearfix">
-  <h1 class="float-md-start mt-0 h2 mb-2 fw-bold">{{ page.title }}</h1>
-  {% if page.badges == true %}
-  <a href="/docs/themeable" class="badge d-flex align-items-center compatibility-badge float-start {% if page.themeable == false %}disabled{%endif%}">
-    <span class="badge-check">
-      <img src="/img/icons/{% if page.themeable == true %}check{% else %}x{% endif %}.svg" />
-    </span>
-    <span>Themeable</span>
-  </a>
-  <a href="/docs/responsive" class="badge d-flex align-items-center compatibility-badge ms-2 float-start {% if page.responsive == false %}disabled{% endif %}">
+<div class="d-flex align-items-center">
+  <h1 class="h2 my-0 fw-bold">{{ page.title }}</h1>
+  {% if page.responsive == true %}
+  <a href="/docs/responsive" class="badge d-flex align-items-center compatibility-badge ms-3">
     <span class="badge-check">
       <img src="/img/icons/{% if page.responsive == true %}check{% else %}x{% endif %}.svg" />
     </span>
@@ -15,4 +9,6 @@
   </a>
   {% endif %}
 </div>
-<hr>
+<div class="text-muted mb-4" style="font-size: 18px;">
+  {{ page.tagline }}
+</div>

@@ -1,15 +1,15 @@
 ---
 layout: docs
 title:  "Setup"
-badges: false
 ---
 #### Environment Support
 - [Command Line](#command-line)
 - [Ruby](#ruby)
 - [Ruby on Rails](#ruby-on-rails)
-- [Online editor](https://editor.bootstrapemail.com)
+- [Online editor](https://editor.bootstrapemail.com) (does not support alpha yet)
 
-___
+<hr class="my-5">
+<a class="anchor" name="command-line"></a>
 
 #### Command Line
 
@@ -30,7 +30,7 @@ bootstrap-email email.html > out.html
 # compile a relative path to a file
 bootstrap-email ./public/index.html
 # specify a path pattern and a destination directory for compiled emails to be saved to
-bootstrap-email -p 'emails/*' -d emails/output
+bootstrap-email -p 'emails/*' -d 'emails/compiled/*'
 # compile for a string
 bootstrap-email -s '<a href="#" class="btn btn-primary">Some Button</a>'
 # pipe a file into bootstrap-email
@@ -41,6 +41,8 @@ bootstrap-email -c bootstrap-email.scss
 
 Help: run the command `bootstrap-email -h` for help on all options.
 
+<hr class="my-5">
+<a class="anchor" name="ruby"></a>
 #### Ruby
 
 1: Add Bootstrap Email to your `Gemfile`
@@ -60,6 +62,8 @@ file_path = File.expand_path('path/to/a/file.html', __dir__)
 BootstrapEmail::Compiler.new(file_path, type: :file).perform_full_compile
 ```
 
+<hr class="my-5">
+<a class="anchor" name="ruby-on-rails"></a>
 #### Ruby on Rails
 
 1: Add Bootstrap Email to your `Gemfile`
@@ -71,7 +75,7 @@ gem 'bootstrap-email', ">= 1.0.0.alpha"
 2: You need to create the mailer template which will wrap the email content. Create the file `/app/views/layouts/bootstrap-mailer.html.erb` and paste this HTML into it. (It is very similar to the default mailer).
 ```erb
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
+<html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="x-apple-disable-message-reformatting">
