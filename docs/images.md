@@ -35,7 +35,7 @@ Images can be very complicated in emails. Luckily Bootstrap email makes it easy.
 <img class="img-fluid" src="https://bootstrapemail.com/some/image.png" alt="Some Image" />
 ```
 
-For doing something other than 100% image with, use the sizing width and height utility classes with your images: [Sizing Docs](/docs/sizing).
+For doing something other than 100% image with, use the sizing width and height utility classes with your images: [Width Docs](/docs/width) & [Height Docs](/docs/height).
 
 {% include header.html name="Accessibility" hr="true" %}
 Make sure you include a descriptive `alt` property on every image, not only does this help with accessibility but it's not uncommon for images to be blocked in an email client and this helps user see what image is being blocked. [More on alt tags](https://moz.com/learn/seo/alt-text)

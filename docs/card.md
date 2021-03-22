@@ -27,7 +27,7 @@ sections:
 {% include header.html name="Usage" hr="false" %}
 Use to wrap content in a solid gray bordered container with rounded corners. Works well sitting on top of an email body with a `.bg-light` class and inside of a `.container`.
 
-By default `.card` has no padding, you can use a card with or without a `.card-body`. Just like in Bootstrap a `.card-body` is just used to give `20px` padding to the card, you can also use a [padding](/docs/sizing) utility to customize padding.
+By default `.card` has no padding, you can use a card with or without a `.card-body`. Just like in Bootstrap a `.card-body` is just used to give `20px` padding to the card, you can also use a [padding](/docs/padding) utility to customize padding.
 
 ```html
 <div class="card">

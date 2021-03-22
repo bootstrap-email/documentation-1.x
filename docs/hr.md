@@ -23,7 +23,7 @@ sections:
 </div>
 
 {% include header.html name="Usage" hr="false" %}
-Add a horizontal rule to separate content. A consistent one that works and looks good in all email clients. By default it has top and bottom spacing of 20px, to use different top and bottom margin us a [margin](/docs/spacing) utility class.
+Add a horizontal rule to separate content. A consistent one that works and looks good in all email clients. By default it has top and bottom spacing of 20px, to use different top and bottom margin us a [margin](/docs/margin) utility class.
 
 ```html
 <hr>
