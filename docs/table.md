@@ -6,9 +6,6 @@ sections:
   - Class Reference
   - Usage
   - Compiled Example
-badges: true
-themeable: false
-responsive: false
 ---
 <a class="anchor" name="reference"></a>
 <div class="table-utilities">

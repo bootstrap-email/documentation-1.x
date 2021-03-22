@@ -1,7 +1,6 @@
 ---
 layout: docs
 title:  "Introduction"
-badges: false
 ---
 #### Welcome to Bootstrap Email
 Bootstrap Email is a tool for building HTML emails using modern concepts without having to understand the quirks of every email client.

@@ -1,7 +1,6 @@
 ---
 layout: docs
 title:  "Email Clients"
-badges: false
 ---
 Bootstrap Email works hard to support as many possible email clients as possible, that way all users get as close to the same experience as possible. Certain exceptions to this are minor visual things like [border radius](/docs/border-radius) which will just fall back to square corners on clients that don't support them.
 <ul class="supported-client-list">

@@ -163,9 +163,8 @@ footer {
   padding: 0.25rem 0.5rem 0.25rem 0.25rem;
   border-radius: 9999px;
   font-weight: 500;
-  margin: 0.4rem 0 0 1rem;
-  display: block;
   text-decoration: none;
+  font-size: 14px;
   .badge-check {
     background-color: #51d88a;
     border-radius: 9999px;
@@ -176,18 +175,9 @@ footer {
       color: white;
     }
   }
-  &.disabled {
-    opacity: .5;
-    .badge-check {
-      background-color: #9babb4;
-    }
-  }
 }
 
 @media (max-width: 768px) {
-  .compatibility-badge {
-    margin: -0.25rem 0.25rem 0.75rem 0;
-  }
   .docs-cta {
     margin-top: 16px !important;
     padding: 0.5rem;

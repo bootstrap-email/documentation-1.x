@@ -4,7 +4,6 @@ title:  "Body"
 tagline: "Basic page structure for better email compatibility."
 sections:
   - Compiled Example
-badges: false
 ---
 
 There is nothing that you need to do here but good information to know. A table with the class `.body` will **automatically** wrap the email content and applies styles to give more consistent layout to the page. You can put classes on the `<body>` that will be moved onto the body table.

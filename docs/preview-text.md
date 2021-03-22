@@ -6,7 +6,6 @@ sections:
   - Reference
   - Usage
   - Compiled Example
-badges: false
 ---
 <a class="anchor" name="reference"></a>
 <div class="table-utilities">

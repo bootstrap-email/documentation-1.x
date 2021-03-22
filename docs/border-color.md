@@ -4,9 +4,6 @@ title:  "Border Color"
 tagline: "Set the border color on an element."
 sections:
   - Class Reference
-badges: true
-themeable: false
-responsive: false
 ---
 <a class="anchor" name="class-reference"></a>
 <div class="table-utilities">

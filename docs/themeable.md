@@ -1,7 +1,6 @@
 ---
 layout: docs
 title:  "Themeable"
-badges: false
 ---
 When you see the
 <span class="d-inline-block">

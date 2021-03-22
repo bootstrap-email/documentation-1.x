@@ -1,7 +1,6 @@
 ---
 layout: docs
 title:  "What's New in v1.0?"
-badges: false
 ---
 #### New Additions in v1.x since v0.x
 - More ways to compile, now supports [command line](/docs/setup#command-line), and plain [Ruby](/docs/setup#ruby) implementation (in addition to existing [Rails](/docs/setup#ruby-on-rails) and [online editor](https://editor.bootstrapemail.com) support).

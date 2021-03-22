@@ -7,8 +7,6 @@ sections:
   - Margin Usage
   - Spacer Usage
   - Compiled Example
-badges: true
-themeable: false
 responsive: true
 ---
 <a class="anchor" name="class-reference"></a>
@@ -37,7 +35,7 @@ Note: Margin is only supported on the top and bottom.
 {% include header.html name="Margin Usage" hr="false" %}
 There are two types of spacing Bootstrap Email supports. [Padding](/docs/padding) (applied to the inside of table cells) and [Margin](/docs/margin) (in the form of vertical spacers which are used to take up space between elements vertically).
 
-The margin classes just create spacers above and/or below and element for simpler syntax like Bootstrap. This example adds a spacer of 12px above and below the middle card. See [space between](/docs/space-between) for more info on adding spacers between elements.
+Margin is very inconsistently supported in email clients. Instead of using `margin` in css the margin classes create spacers above and/or below and element for simpler syntax like Bootstrap. This example adds a spacer of 12px above and below the middle card. See [space between](/docs/space-between) for more info on adding spacers between elements.
 ```html
 <div class="card card-body">Top Card</div>
 <div class="card card-body my-3">Middle Card (with margin above and below)</div>

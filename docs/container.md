@@ -6,8 +6,6 @@ sections:
   - Class Reference
   - Usage
   - Compiled Example
-badges: true
-themeable: false
 responsive: true
 ---
 

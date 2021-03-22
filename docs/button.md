@@ -8,9 +8,6 @@ sections:
   - Outline
   - Sizes
   - Compiled Example
-badges: true
-themeable: true
-responsive: false
 ---
 <a class="anchor" name="class-reference"></a>
 <div class="table-utilities">

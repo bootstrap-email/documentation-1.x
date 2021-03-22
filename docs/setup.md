@@ -1,7 +1,6 @@
 ---
 layout: docs
 title:  "Setup"
-badges: false
 ---
 #### Environment Support
 - [Command Line](#command-line)

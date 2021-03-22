@@ -8,8 +8,6 @@ sections:
   - Gap
   - Alignment
   - Compiled Example
-badges: true
-themeable: false
 responsive: true
 ---
 <a class="anchor" name="class-reference"></a>
