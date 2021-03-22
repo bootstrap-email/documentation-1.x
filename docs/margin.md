@@ -1,11 +1,17 @@
 ---
 layout: docs
-title:  "Spacing"
+title:  "Margin"
+tagline: 'Set vertical "margin" between elements.'
+sections:
+  - Class Reference
+  - Margin Usage
+  - Spacer Usage
+  - Compiled Example
 badges: true
 themeable: false
 responsive: true
 ---
-There are three types of spacing Bootstrap Email supports. Padding (applied to the inside of table cells) and Margin (in the form of vertical spacers) and Spacers which are used to take up space between elements vertically.
+<a class="anchor" name="class-reference"></a>
 <div class="table-utilities">
   <table class="table">
     <thead>
@@ -16,36 +22,22 @@ There are three types of spacing Bootstrap Email supports. Padding (applied to t
     </thead>
     <tbody>
       {% for spacing in site.data.spacings %}
-        <tr><td>.p-{{ spacing }}</td><td>padding: {{ spacing | times: 4 }}px;</td></tr>
-        <tr><td>.px-{{ spacing }}</td><td>padding-left: {{ spacing | times: 4 }}px; padding-right: {{ spacing | times: 4 }}px;</td></tr>
-        <tr><td>.py-{{ spacing }}</td><td>padding-top: {{ spacing | times: 4 }}px; padding-bottom: {{ spacing | times: 4 }}px;</td></tr>
-        <tr><td>.pt-{{ spacing }}</td><td>padding-top: {{ spacing | times: 4 }}px;</td></tr>
-        <tr><td>.pr-{{ spacing }}</td><td>padding-right: {{ spacing | times: 4 }}px;</td></tr>
-        <tr><td>.pb-{{ spacing }}</td><td>padding-bottom: {{ spacing | times: 4 }}px;</td></tr>
-        <tr><td>.pl-{{ spacing }}</td><td>padding-left: {{ spacing | times: 4 }}px;</td></tr>
+        <tr><td class="class">.my-{{ spacing }}</td><td class="result">Make a {{ spacing | times: 4 }}px spacer above and below</td></tr>
+        <tr><td class="class">.mt-{{ spacing }}</td><td class="result">Make a {{ spacing | times: 4 }}px spacer above</td></tr>
+        <tr><td class="class">.mb-{{ spacing }}</td><td class="result">Make a {{ spacing | times: 4 }}px spacer below</td></tr>
       {% endfor %}
       {% for spacing in site.data.spacings %}
-        <tr><td>.my-{{ spacing }}</td><td>Make a {{ spacing | times: 4 }}px spacer above and below</td></tr>
-        <tr><td>.mt-{{ spacing }}</td><td>Make a {{ spacing | times: 4 }}px spacer above</td></tr>
-        <tr><td>.mb-{{ spacing }}</td><td>Make a {{ spacing | times: 4 }}px spacer below</td></tr>
-      {% endfor %}
-      {% for spacing in site.data.spacings %}
-        <tr><td>.s-{{ spacing }}</td><td>Make a spacer {{ spacing | times: 4 }}px tall</td></tr>
+        <tr><td class="class">.s-{{ spacing }}</td><td class="result">Make a spacer {{ spacing | times: 4 }}px tall</td></tr>
       {% endfor %}
     </tbody>
   </table>
 </div>
 Note: Margin is only supported on the top and bottom.
 
-#### Padding
-```html
-<a class="btn btn-primary p-3" href="http://bootstrapemail.com">A Button with lots of padding</a>
-```
+{% include header.html name="Margin Usage" hr="false" %}
+There are two types of spacing Bootstrap Email supports. [Padding](/docs/padding) (applied to the inside of table cells) and [Margin](/docs/margin) (in the form of vertical spacers which are used to take up space between elements vertically).
 
-<a class="btn btn-primary p-3" href="http://bootstrapemail.com">A Button with lots of padding</a>
-
-#### Margin
-The margin classes just create spacers above and/or below and element for simpler syntax like Bootstrap.
+The margin classes just create spacers above and/or below and element for simpler syntax like Bootstrap. This example adds a spacer of 12px above and below the middle card. See [space between](/docs/space-between) for more info on adding spacers between elements.
 ```html
 <div class="card card-body">Top Card</div>
 <div class="card card-body my-3">Middle Card (with margin above and below)</div>
@@ -56,9 +48,45 @@ The margin classes just create spacers above and/or below and element for simple
 <div class="card card-body my-3">Middle Card (with margin about and below)</div>
 <div class="card card-body">Bottom Card</div>
 
-#### Spacer
+{% include header.html name="Spacer Usage" hr="true" %}
 ```html
 <div class="s-3"></div>
 ```
-
 Spacers hold not content, they are just put into the document to sit between elements in a vertical flow.
+
+{% include header.html name="Compiled Example" hr="true" %}
+<span class="badge rounded-pill badge-input">Input</span>
+```html
+<a class="btn btn-primary my-3" href="http://example.com">Button with mega margin</a>
+```
+
+<span class="badge rounded-pill badge-output">Output</span>
+```html
+<table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+  <tbody>
+    <tr>
+      <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
+         
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table class="btn btn-primary" role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-radius: 6px; border-collapse: separate !important;">
+  <tbody>
+    <tr>
+      <td style="line-height: 24px; font-size: 16px; border-radius: 6px; margin: 0;" align="center" bgcolor="#0d6efd">
+        <a href="http://example.com" style="color: #ffffff; font-size: 16px; font-family: Helvetica, Arial, sans-serif; text-decoration: none; border-radius: 6px; line-height: 20px; display: inline-block; font-weight: normal; white-space: nowrap; background-color: #0d6efd; padding: 8px 12px; border: 1px solid #0d6efd;">Button with mega margin</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+  <tbody>
+    <tr>
+      <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
+         
+      </td>
+    </tr>
+  </tbody>
+</table>
+```
