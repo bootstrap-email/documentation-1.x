@@ -29,7 +29,7 @@ responsive: true
 </div>
 
 {% include header.html name="Usage" hr="false" %}
-Images can be very complicated in emails. Luckily Bootstrap email makes it easy. Images need to have at leave have either a width or a height for them to render properly in something like Outlook. To keep an element full width of it's container, give it the `img-fluid`. Doing so will set properties like the `width="100%"` attribute on the img tag which is required for Outlook rendering.
+Images can be very complicated in emails. Luckily Bootstrap email makes it easy. Images need to have at least either a width or a height for them to render properly in something like Outlook. To keep an element full width of it's container, give it the `img-fluid`. Doing so will set properties like the `width="100%"` attribute on the img tag which is required for Outlook rendering.
 
 ```html
 <img class="img-fluid" src="https://bootstrapemail.com/some/image.png" alt="Some Image" />
