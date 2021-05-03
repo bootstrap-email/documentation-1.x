@@ -6,14 +6,14 @@ title:  "Setup"
 - [Command Line](#command-line)
 - [Ruby](#ruby)
 - [Ruby on Rails](#ruby-on-rails)
-- [Online editor](https://editor.bootstrapemail.com) (does not support alpha yet)
+- [Online editor](https://app.bootstrapemail.com/editor?version=1)
 
 <hr class="my-5">
 <a class="anchor" name="command-line"></a>
 
 #### Command Line
 
-[Ruby](#) is required to be installed on the machine you are using to run Bootstrap Email.
+[Ruby](https://www.ruby-lang.org/en/documentation/installation/) is required to be installed on the machine you are using to run Bootstrap Email.
 
 1: Install bootstrap email via [Ruby Gems](https://rubygems.org/gems/bootstrap-email)
 ```bash
