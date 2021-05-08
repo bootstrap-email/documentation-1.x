@@ -6,6 +6,7 @@ sections:
   - Config
   - Config Path
   - Customize Sass
+  - Additional Methods
 ---
 {% include header.html name="Config" hr="false" %}
 Configure different aspects of Bootstrap Email. It will look for a file in the working directory for `bootstrap_email.config.rb`. If you are using Rails, put this file in `config/initializers/bootstrap_email.rb`. Here is a list of the config options that you can customize.
@@ -71,3 +72,9 @@ a {
 }
 ```
 For more examples of variables that can be overridden check out the SCSS files for [colors](https://github.com/bootstrap-email/bootstrap-email/blob/v1-dev/core/scss/_colors.scss), [utilities](https://github.com/bootstrap-email/bootstrap-email/blob/v1-dev/core/scss/_utilities.scss), and [variables](https://github.com/bootstrap-email/bootstrap-email/blob/v1-dev/core/scss/_variables.scss)
+
+{% include header.html name="Additional Methods" hr="true" %}
+
+`BoostrapEmail.reset_config!` to reset all the configuration.
+
+`BootstrapEmail.clear_sass_cache!` to clear the cached sass files.
