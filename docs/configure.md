@@ -19,6 +19,8 @@ BootstrapEmail.configure do |config|
   config.sass_load_paths = [File.expand_path('some/folder', __dir__)]
   # Defaults to ./.sass-cache or ./tmp/cache/bootstrap-email/.sass-cache in rails
   config.sass_cache_location = [File.expand_path('some/folder', __dir__)]
+  # Defaults to true, is disabled during CLI commands that output to standard out
+  config.sass_log_enabled = true
 end
 ```
 
@@ -34,6 +36,7 @@ html = '<div>Hello</div>'
 path = File.expand_path('path/to/bootstrap-email.config.rb', __dir__)
 BootstrapEmail::Compiler.new(html, options: {config_path: path}).perform_full_compile
 ```
+Also any config above, `sass_email_location` for example, can be passed in via the `options` hash.
 
 {% include header.html name="Customize Sass" hr="true" %}
 If you want to customize styles like colors or spacing or even want to add custom styles to be compiled with the SCSS and inlined into your email you can use a config file. By default Bootstrap Email will look for a `bootstrap-email.scss` file in the root of the working directory / project.
