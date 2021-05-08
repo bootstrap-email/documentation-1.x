@@ -1,17 +1,19 @@
 ---
 layout: docs
-title:  "Setup"
+title:  "Usage"
+sections:
+  - Command Line
+  - Ruby
+  - Ruby on Rails
+  - Online editor
 ---
 #### Environment Support
 - [Command Line](#command-line)
 - [Ruby](#ruby)
 - [Ruby on Rails](#ruby-on-rails)
-- [Online editor](https://app.bootstrapemail.com/editor?version=1)
+- [Online editor](#online-editor)
 
-<hr class="my-5">
-<a class="anchor" name="command-line"></a>
-
-#### Command Line
+{% include header.html name="Command Line" hr="false" %}
 
 [Ruby](https://www.ruby-lang.org/en/documentation/installation/) is required to be installed on the machine you are using to run Bootstrap Email.
 
@@ -41,9 +43,7 @@ bootstrap-email -c bootstrap-email.scss
 
 Help: run the command `bootstrap-email -h` for help on all options.
 
-<hr class="my-5">
-<a class="anchor" name="ruby"></a>
-#### Ruby
+{% include header.html name="Ruby" hr="false" %}
 
 1: Add Bootstrap Email to your `Gemfile`
 
@@ -62,9 +62,7 @@ file_path = File.expand_path('path/to/a/file.html', __dir__)
 BootstrapEmail::Compiler.new(file_path, type: :file).perform_full_compile
 ```
 
-<hr class="my-5">
-<a class="anchor" name="ruby-on-rails"></a>
-#### Ruby on Rails
+{% include header.html name="Ruby on Rails" hr="false" %}
 
 1: Add Bootstrap Email to your `Gemfile`
 
@@ -145,3 +143,13 @@ class ExampleMailer < ApplicationMailer
   end
 end
 ```
+
+{% include header.html name="Online editor" hr="false" %}
+An easier, but less integrated and customizable way to use Bootstrap Email is the online editor.
+- Write an email and test it's rendering quickly
+- Test on desktop and mobile responsive device widths
+- Save emails to your account to come back to
+- Send test emails directly to your inbox
+
+<a href="https://app.bootstrapemail.com/editor?version=1" class="btn btn-purple my-3">Try the Online Editor</a>
+<img class="w-100" src="/img/editor.png" />

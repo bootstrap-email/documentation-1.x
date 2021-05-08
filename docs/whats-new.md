@@ -5,6 +5,7 @@ tagline: "What's New in v1.0?"
 ---
 #### New Additions in v1.x since v0.x
 - More ways to compile, now supports [command line](/docs/setup#command-line), and plain [Ruby](/docs/setup#ruby) implementation (in addition to existing [Rails](/docs/setup#ruby-on-rails) and [online editor](https://editor.bootstrapemail.com) support).
+- More configuration to be able to customize SASS and customize paths. [Configure](/docs/configure)
 - Unused styles in the `<head>` are now purged to reduce the final compiled document size.
 - New stack class for flexbox-like functionality. [Stack Docs](/docs/stack)
 - New gap sizing classes for grid and stack. [Grid Docs](/docs/gap)
