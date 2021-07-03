@@ -24,6 +24,8 @@ responsive: true
   </table>
 </div>
 
+<p class="text-muted">Looking for flexbox support? Check out <a href="/docs/stack">stack documentation</a> for flexbox-like support in email using tables.</p>
+
 {% include header.html name="Responsive" hr="false" %}
 Here is an example of using the display utility to show and hide an element on mobile and hidden on desktop and vice versus.
 ```html

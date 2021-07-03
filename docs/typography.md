@@ -24,9 +24,10 @@ sections:
       <tr><td class="class">&lt;h5&gt;, .h5</td><td class="css">font-size: 20px;</td></tr>
       <tr><td class="class">&lt;h6&gt;, .h6</td><td class="css">font-size: 16px;</td></tr>
       <tr><td class="class">&lt;strong&gt;</td><td class="css">font-weight: bold;</td></tr>
-      <tr><td class="class">&lt;u&gt;</td><td class="css">text-decoration: underline;</td></tr>
       <tr><td class="class">&lt;em&gt;</td><td class="css">font-style: italic;</td></tr>
-      <tr><td class="class">&lt;s&gt;</td><td class="css">text-decoration: line-through;</td></tr>
+      <tr><td class="class">.underline, &lt;u&gt;</td><td class="css">text-decoration: underline;</td></tr>
+      <tr><td class="class">.no-underline</td><td class="css">text-decoration: none;</td></tr>
+      <tr><td class="class">.line-through, &lt;s&gt;</td><td class="css">text-decoration: line-through;</td></tr>
     </tbody>
   </table>
 </div>
