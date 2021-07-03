@@ -41,7 +41,7 @@ Align uses the `align="left|center|right` property on `table` to align anything 
 {% include header.html name="Compiled Example" hr="true" %}
 <span class="badge rounded-pill badge-input">Input</span>
 ```html
-<div class="ax-left">Hellaxo</div>
+<div class="ax-left">Hello</div>
 <div class="ax-center">WOWWWWW</div>
 <div class="ax-right">Goodbye</div>
 ```
