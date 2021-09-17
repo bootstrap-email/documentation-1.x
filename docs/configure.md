@@ -75,6 +75,6 @@ For more examples of variables that can be overridden check out the SCSS files f
 
 {% include header.html name="Additional Methods" hr="true" %}
 
-`BoostrapEmail.reset_config!` to reset all the configuration.
+`BootstrapEmail.reset_config!` to reset all the configuration.
 
 `BootstrapEmail.clear_sass_cache!` to clear the cached sass files.
