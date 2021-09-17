@@ -48,7 +48,7 @@ Help: run the command `bootstrap-email -h` for help on all options.
 1: Add Bootstrap Email to your `Gemfile`
 
 ```ruby
-gem 'bootstrap-email', ">= 1.0.0.alpha"
+gem 'bootstrap-email'
 ```
 
 2: Usage is simple, there are two ways to call Bootstrap Email, string and file.
@@ -67,7 +67,7 @@ BootstrapEmail::Compiler.new(file_path, type: :file).perform_full_compile
 1: Add Bootstrap Email to your `Gemfile`
 
 ```ruby
-gem 'bootstrap-email', ">= 1.0.0.alpha"
+gem 'bootstrap-email'
 ```
 
 2: You need to create the mailer template which will wrap the email content. Create the file `/app/views/layouts/bootstrap-mailer.html.erb` and paste this HTML into it. (It is very similar to the default mailer).
