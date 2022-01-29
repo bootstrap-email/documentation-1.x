@@ -19,8 +19,7 @@ sections:
 
 1: Install bootstrap email via [Ruby Gems](https://rubygems.org/gems/bootstrap-email)
 ```bash
-# to get the prerelease alpha version
-gem install bootstrap-email --pre
+gem install bootstrap-email
 ```
 
 2: There are many ways to use the command line to compile emails:
