@@ -34,6 +34,8 @@ bootstrap-email ./public/index.html
 bootstrap-email -p 'emails/*' -d 'emails/compiled/*'
 # compile for a string
 bootstrap-email -s '<a href="#" class="btn btn-primary">Some Button</a>'
+# compile to plain text
+bootstrap-email -t -s '<a href="#" class="btn btn-primary">Some Button</a>'
 # pipe a file into bootstrap-email
 cat input.html | bootstrap-email
 # specify config path to use to customize things like colors
