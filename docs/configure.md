@@ -32,7 +32,7 @@ end
 ```
 
 {% include header.html name="Config Path" hr="true" %}
-If you want to provide a path to a config file, you can use the `options: {config_path: 'path'}}` option in the `BoostrapEmail::Compiler.new()` method or with the `-c` flag via the CLI.
+If you want to provide a path to a config file, you can use the `options: {config_path: 'path'}}` option in the `BootstrapEmail::Compiler.new()` method or with the `-c` flag via the CLI.
 - Using the CLI:
 ```bash
 bootstrap-email -c path/to/bootstrap-email.config.rb
