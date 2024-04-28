@@ -30,24 +30,24 @@ sections:
 Use the [Background Color](/docs/background-color), [Text Color](/docs/text-color), and [Border Radius](/docs/border-radius) classes to style badges.
 
 ```html
-<span class="badge bg-primary">Primary</span>
-<span class="badge bg-secondary">Secondary</span>
-<span class="badge bg-success">Success</span>
-<span class="badge bg-danger">Danger</span>
-<span class="badge bg-warning text-dark">Warning</span>
-<span class="badge bg-info text-dark">Info</span>
-<span class="badge bg-light text-dark rounded-full">Light</span>
-<span class="badge bg-dark rounded-full">Dark</span>
+<span class="badge badge-primary">Primary</span>
+<span class="badge badge-secondary">Secondary</span>
+<span class="badge badge-success">Success</span>
+<span class="badge badge-danger">Danger</span>
+<span class="badge badge-warning">Warning</span>
+<span class="badge badge-info">Info</span>
+<span class="badge badge-light rounded-full">Light</span>
+<span class="badge badge-dark rounded-full">Dark</span>
 ```
 
-<span class="badge bg-primary">Primary</span>
-<span class="badge bg-secondary">Secondary</span>
-<span class="badge bg-success">Success</span>
-<span class="badge bg-danger">Danger</span>
-<span class="badge bg-warning text-dark">Warning</span>
-<span class="badge bg-info text-dark">Info</span>
-<span class="badge bg-light text-dark rounded-pill">Light</span>
-<span class="badge bg-dark rounded-pill">Dark</span>
+<span class="badge badge-primary">Primary</span>
+<span class="badge badge-secondary">Secondary</span>
+<span class="badge badge-success">Success</span>
+<span class="badge badge-danger">Danger</span>
+<span class="badge badge-warning">Warning</span>
+<span class="badge badge-info">Info</span>
+<span class="badge badge-light rounded-pill">Light</span>
+<span class="badge badge-dark rounded-pill">Dark</span>
 
 {% include header.html name="Compiled Example" hr="true" %}
 <span class="badge rounded-pill badge-input">Input</span>
