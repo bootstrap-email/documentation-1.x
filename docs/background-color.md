@@ -46,8 +46,8 @@ Since emails render mostly consistently with tables, many of the components are 
 <div class="bg-danger text-white">.bg-red-500</div>
 <div class="bg-warning text-white">.bg-yellow-500</div>
 
-{% include header.html name="Customize" hr="true" %}
-See the [Customize](/docs/customize) docs to learn more about customizing the color palette.
+{% include header.html name="Configure" hr="true" %}
+See the [Configure](/docs/configure) docs to learn more about customizing the color palette.
 
 {% include header.html name="Compiled Example" hr="true" %}
 <span class="badge rounded-pill badge-input">Input</span>
