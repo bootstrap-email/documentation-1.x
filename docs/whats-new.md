@@ -24,4 +24,4 @@ tagline: "What's New in v1.0?"
 - Many more color options for backgrounds, text, borders, and buttons. [Background Color Docs](/docs/background-color) & [Text Color Docs](/docs/text-color) & [Border Color Docs](/docs/border-color) & [Button Docs](/docs/button)
 - Many more border radius options. [Border Radius Docs](/docs/border-radius)
 - Visibility classes changed to Display to better support responsive options. [Display Docs](/docs/display)
-- Major overhaul of the entire library focusing on customization. [More on customization](/docs/customize)
+- Major overhaul of the entire library focusing on customization. [More on customization](/docs/configure)
