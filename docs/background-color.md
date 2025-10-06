@@ -5,7 +5,7 @@ tagline: "Set a custom background color."
 sections:
   - Class Reference
   - Usage
-  - Customize
+  - Configure
   - Compiled Example
 ---
 <a class="anchor" name="class-reference"></a>
