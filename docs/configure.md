@@ -27,7 +27,9 @@ BootstrapEmail.configure do |config|
   # Defaults to true, is disabled during CLI commands that output to standard out
   config.sass_log_enabled = true
   # Turn on or off whether or not rails will also include a plain text email part, Default: true
-  config.generate_rails_text_part
+  config.generate_rails_text_part = true
+  # boolean to override the mail method in rails, default: false
+  config.override_mail_method = false
 end
 ```
 
