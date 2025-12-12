@@ -16,7 +16,7 @@ This is a list of all the components that are responsive.
 
 When you see the
 <span class="d-inline-block">
-  <a href="/docs/themeable" class="badge m-0 d-flex align-items-center compatibility-badge">
+  <a href="/docs/responsive" class="badge m-0 d-flex align-items-center compatibility-badge">
     <span class="badge-check">
       <img src="/img/icons/check.svg" />
     </span>
